@@ -81,15 +81,22 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP Configuration
-# TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_DEFAULT_LANGUAGE := zh_CN
+TW_DEVICE_VERSION := RK356X_OPi3B_A11
+
+# Remove hardware we don't have
+TW_NO_HAPTICS := true
+TW_NO_BATT_PERCENT := true
+
+TW_INCLUDE_FASTBOOTD := true
 
 # HDMI Display
+TW_NO_SCREEN_TIMEOUT := true
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 800
 
@@ -98,3 +105,7 @@ TARGET_SCREEN_WIDTH := 800
 # TW_CRYPTO_MNT_POINT := "/data"
 # TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 # TW_INCLUDE_CRYPTO := true
+
+# Debug
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
