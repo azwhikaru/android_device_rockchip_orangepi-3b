@@ -1,5 +1,5 @@
 Rockchip prebuilt part
 
-resource.img as boot.img-second
+dtb.img, dtbo.img, kernel, resource.img are prebuilt from rockchip sdk
 
-see https://roadtothe.top/4.html for details
+NOTE: resource.img as boot.img-second, see https://roadtothe.top/4.html for details
